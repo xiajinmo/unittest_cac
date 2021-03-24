@@ -18,7 +18,8 @@ login:
     x-auth-password: Lemon19970207!
     x-auth-remember: 'false'
     x-auth-username: sherry@rynnova.com
-    x-force-login: 'false'
+    x-force-login: 'true'
+    last-login-token: ''
     x-requested-with: /
   data:
     password: "Lemon19970207!"

@@ -1,3 +1,4 @@
 logout:
+  path: https://uat.rynnova.com/9093api/loginHistory/logoutSession?id=
   headers:
     x-auth-login-token: '-1'

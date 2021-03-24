@@ -1,11 +1,60 @@
 department1:
   name: create_department
-  # 创建部门
   create_department_path: departments
   create_params:
     lang: 'zh'
   data:
-    description: "测试用部门2。"
-    domainId: 2
+    description: "测试用部门1"
+    domainId: 3
     type: "USER"
-    userName: "物资传输部"
+    userName: "软件研发部"
+department2:
+  name: create_department
+  create_department_path: departments
+  create_params:
+    lang: 'zh'
+  data:
+    description: "测试用部门2"
+    domainId: 3
+    type: "USER"
+    userName: "国内营销部"
+department3:
+  name: create_department
+  create_department_path: departments
+  create_params:
+    lang: 'zh'
+  data:
+    description: "测试用部门3"
+    domainId: 3
+    type: "USER"
+    userName: "硬件研究部"
+department4:
+  name: create_department
+  create_department_path: departments
+  create_params:
+    lang: 'zh'
+  data:
+    description: "测试用部门4"
+    domainId: 3
+    type: "USER"
+    userName: "算法数据部"
+department5:
+  name: create_department
+  create_department_path: departments
+  create_params:
+    lang: 'zh'
+  data:
+    description: "测试用部门5"
+    domainId: 3
+    type: "USER"
+    userName: "海外营销部"
+department6:
+  name: create_department
+  create_department_path: departments
+  create_params:
+    lang: 'zh'
+  data:
+    description: "测试用部门6"
+    domainId: 3
+    type: "USER"
+    userName: "供应链生产部"

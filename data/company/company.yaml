@@ -1,0 +1,10 @@
+company1:
+  name: create_company
+  # 创建公司
+  create_company_path: domains
+  create_params:
+    lang: 'zh'
+  data:
+    companyNameAbbreviation: "SY-02"
+    dynamicFields: []
+    name: "SY-02"

@@ -1,0 +1,70 @@
+Chage_department1:
+  name: change_DptResource
+  create_department_path: resourceDepartments/create
+  data:
+    0:
+      departmentId: 15
+      domainId: 3
+      id: 181
+      max: "20"
+      resourceType: "Instance"
+    1:
+      departmentId: 15
+      domainId: 3
+      id: 190
+      max: "40"
+      resourceType: "CPU"
+    2:
+      departmentId: 15
+      domainId: 3
+      id: 191
+      max: 40960
+      resourceType: "Memory"
+    3:
+      departmentId: 15
+      domainId: 3
+      id: 184
+      max: "20"
+      resourceType: "Volume"
+    4:
+      departmentId: 15
+      domainId: 3
+      id: 192
+      max: "1000"
+      resourceType: "PrimaryStorage"
+    5:
+      departmentId: 15
+      domainId: 3
+      id: 182
+      max: "1000"
+      resourceType: "SecondaryStorage"
+    6:
+      departmentId: 15
+      domainId: 3
+      id: 186
+      max: "5"
+      resourceType: "Template"
+    7:
+      departmentId: 15
+      domainId: 3
+      id: 189
+      max: "3"
+      resourceType: "VPC"
+    8:
+      departmentId: 15
+      domainId: 3
+      id: 183
+      max: "5"
+      resourceType: "IP"
+    9:
+      departmentId: 15
+      domainId: 3
+      id: 188
+      max: -1
+      resourceType: "Network"
+    10:
+      departmentId: 15
+      domainId: 3
+      id: 185
+      max: -1
+      resourceType: "Snapshot"
