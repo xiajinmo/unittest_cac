@@ -1,5 +1,6 @@
 #test/test_swagger
-test/test_volume
+test/test_department
+#test/test_volume
 #test/test_resource_norm
 #test/test_network
 #instance/test02case
