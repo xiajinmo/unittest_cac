@@ -1,0 +1,24 @@
+network_isolated01:
+  name: '测试创建隔离网络'
+  path_create: api/guestnetwork
+  params_create:
+    lang: 'zh'
+  data:
+    departmentId: '1'
+    displayText: "测试自动化000"
+    domainId: '1'
+    gateway: "192.168.69.1"
+    name: "sherry-zdh01"
+    netMask: "255.255.255.0"
+    networkDomain: ''
+    networkOfferingId: '8'
+    zoneId: '1'
+  path_check: api/guestnetwork/listallCount
+  headers_check:
+    Range: 'items=0-9'
+  params_check:
+    lang: 'zh'
+    statusType: 'ALL'
+    zoneId: '1'
+    sortBy: '-id'
+    limit: '10'

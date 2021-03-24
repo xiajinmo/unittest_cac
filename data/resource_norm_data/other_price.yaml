@@ -1,0 +1,36 @@
+price01:
+  name: option_other_price
+  edit_miscellaneous: api/miscellaneous
+  # 查询其他单价
+  template_url: api/miscellaneous/listtemplate
+  backup_url: api/miscellaneous/listvolumesnapshot
+  publicip_url: api/miscellaneous/listbyipcost
+  snapshot_url: api/miscellaneous/listvmsnapshot
+  params:
+    lang: zh
+    sortBy: -id
+  # 编辑私有镜像单价
+  template_price_data:
+    costperGB: 76
+    costType: "TEMPLATE"
+    zone:
+      id: 5
+  # 编辑磁盘备份单价
+  disk_backup_price_data:
+    costperGB: 54
+    costType: "VOLUMESNAPSHOT"
+    zone:
+      id: 5
+  # 编辑公网IP单价
+  publicip_price_data:
+    costperGB: 32
+    costType: "IPADDRESS"
+    zone:
+      id: 5
+  # 编辑虚拟机快照单价
+  snapshot_price_data:
+    costperGB: 21
+    costType: "VMSNAPSHOT"
+    zone:
+      id: 5
+

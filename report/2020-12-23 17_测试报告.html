@@ -1,0 +1,1507 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>测试报告</title>
+    <meta name="generator" content="HTMLTestRunner 0.8.2"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    
+<style type="text/css" media="screen">
+body        { font-family: verdana, arial, helvetica, sans-serif; font-size: 80%; }
+table       { font-size: 100%; }
+pre         { }
+
+/* -- heading ---------------------------------------------------------------------- */
+h1 {
+	font-size: 16pt;
+	color: gray;
+}
+.heading {
+    margin-top: 0ex;
+    margin-bottom: 1ex;
+}
+
+.heading .attribute {
+    margin-top: 1ex;
+    margin-bottom: 0;
+}
+
+.heading .description {
+    margin-top: 4ex;
+    margin-bottom: 6ex;
+}
+
+/* -- css div popup ------------------------------------------------------------------------ */
+a.popup_link {
+}
+
+a.popup_link:hover {
+    color: red;
+}
+
+.popup_window {
+    display: none;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    /*border: solid #627173 1px; */
+    padding: 10px;
+    background-color: #E6E6D6;
+    font-family: "Lucida Console", "Courier New", Courier, monospace;
+    text-align: left;
+    font-size: 8pt;
+    width: 800px;
+
+}
+
+}
+/* -- report ------------------------------------------------------------------------ */
+#show_detail_line {
+    margin-top: 3ex;
+    margin-bottom: 1ex;
+}
+#result_table {
+    width: 80%;
+    border-collapse: collapse;
+    border: 1px solid #777;
+}
+#header_row {
+    font-weight: bold;
+    color: white;
+    background-color: #777;
+    text-align:center;
+}
+#result_table td {
+    border: 1px solid #777;
+    padding: 2px;
+}
+#total_row  { font-weight: bold; }
+.passClass  { background-color: #6c6; }
+.failClass  { background-color: #c60; }
+.errorClass { background-color: #c00; }
+.passCase   { color: #6c6; }
+.failCase   { color: #c60; font-weight: bold; }
+.errorCase  { color: #c00; font-weight: bold; }
+.hiddenRow  { display: none; }
+.testcase   { margin-left: 2em; }
+
+
+/* -- ending ---------------------------------------------------------------------- */
+#ending {
+}
+
+</style>
+
+</head>
+<body>
+<script language="javascript" type="text/javascript"><!--
+output_list = Array();
+
+/* level - 0:Summary; 1:Failed; 2:All */
+function showCase(level) {
+    trs = document.getElementsByTagName("tr");
+    for (var i = 0; i < trs.length; i++) {
+        tr = trs[i];
+        id = tr.id;
+        if (id.substr(0,2) == 'ft') {
+            if (level < 1) {
+                tr.className = 'hiddenRow';
+            }
+            else {
+                tr.className = '';
+            }
+        }
+        if (id.substr(0,2) == 'pt') {
+            if (level > 1) {
+                tr.className = '';
+            }
+            else {
+                tr.className = 'hiddenRow';
+            }
+        }
+    }
+}
+
+
+function showClassDetail(cid, count) {
+    var id_list = Array(count);
+    var toHide = 1;
+    for (var i = 0; i < count; i++) {
+        tid0 = 't' + cid.substr(1) + '.' + (i+1);
+        tid = 'f' + tid0;
+        tr = document.getElementById(tid);
+        if (!tr) {
+            tid = 'p' + tid0;
+            tr = document.getElementById(tid);
+        }
+        id_list[i] = tid;
+        if (tr.className) {
+            toHide = 0;
+        }
+    }
+    for (var i = 0; i < count; i++) {
+        tid = id_list[i];
+        if (toHide) {
+            document.getElementById('div_'+tid).style.display = 'none'
+            document.getElementById(tid).className = 'hiddenRow';
+        }
+        else {
+            document.getElementById(tid).className = '';
+        }
+    }
+}
+
+
+function showTestDetail(div_id){
+    var details_div = document.getElementById(div_id)
+    var displayState = details_div.style.display
+    // alert(displayState)
+    if (displayState != 'block' ) {
+        displayState = 'block'
+        details_div.style.display = 'block'
+    }
+    else {
+        details_div.style.display = 'none'
+    }
+}
+
+
+function html_escape(s) {
+    s = s.replace(/&/g,'&amp;');
+    s = s.replace(/</g,'&lt;');
+    s = s.replace(/>/g,'&gt;');
+    return s;
+}
+
+/* obsoleted by detail in <div>
+function showOutput(id, name) {
+    var w = window.open("", //url
+                    name,
+                    "resizable,scrollbars,status,width=800,height=450");
+    d = w.document;
+    d.write("<pre>");
+    d.write(html_escape(output_list[id]));
+    d.write("\n");
+    d.write("<a href='javascript:window.close()'>close</a>\n");
+    d.write("</pre>\n");
+    d.close();
+}
+*/
+--></script>
+
+<div class='heading'>
+<h1>测试报告</h1>
+<p class='attribute'><strong>Start Time:</strong> 2020-12-23 17:41:22</p>
+<p class='attribute'><strong>Duration:</strong> 0:00:05.612623</p>
+<p class='attribute'><strong>Status:</strong> Pass 5</p>
+
+<p class='description'>测试结果</p>
+</div>
+
+
+
+<p id='show_detail_line'>Show
+<a href='javascript:showCase(0)'>Summary</a>
+<a href='javascript:showCase(1)'>Failed</a>
+<a href='javascript:showCase(2)'>All</a>
+</p>
+<table id='result_table'>
+<colgroup>
+<col align='left' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+</colgroup>
+<tr id='header_row'>
+    <td colspan='2'>Test Group/Test case</td>
+    <td>Count</td>
+    <td>Pass</td>
+    <td>Fail</td>
+    <td>Error</td>
+    <td>View</td>
+</tr>
+
+<tr class='passClass'>
+    <td>test_volume.TestVolume</td>
+    <td>test_sherry</td>
+    <td>5</td>
+    <td>5</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1',5)">Detail</a></td>
+</tr>
+
+<tr id='pt1.1' class='hiddenRow'>
+    <td colspan='2' class='none'><div class='testcase'>test_2_login_00001_login: test_2_login_00001_login</div></td>
+    <td colspan='7' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.1')" >
+        pass</a>
+
+    <div id='div_pt1.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.1: ——————————测试登录——————————
+{
+  "domainUuid": "602d9221-e184-11e8-9d95-4ab2a88c1305",
+  "userStatus": "ENABLED",
+  "licenseMessage": "license证书校验通过，可正常访问系统",
+  "eventTotal": 6109,
+  "loginType": "LDAP",
+  "departmentId": 1,
+  "permissionList": [
+    {
+      "action_key": "VIEW_CONSOLE",
+      "action": "View Console",
+      "description": "Instance",
+      "id": 1,
+      "isActive": true
+    },
+    {
+      "action_key": "ATTACH_SERVICE",
+      "action": "Attach Service",
+      "description": "Instance",
+      "id": 2,
+      "isActive": true
+    },
+    {
+      "action_key": "DISABLE_VPN",
+      "action": "Disable VPN",
+      "description": "Network",
+      "id": 3,
+      "isActive": true
+    },
+    {
+      "action_key": "ADD_FIREWALL_RULE",
+      "action": "Add Firewall Rule",
+      "description": "Network",
+      "id": 4,
+      "isActive": true
+    },
+    {
+      "action_key": "PROJECT_RESOURCE_QUOTA_MODIFICATION",
+      "action": "Project Resource Quota Modification",
+      "description": "Projects",
+      "id": 5,
+      "isActive": true
+    },
+    {
+      "action_key": "ADD_SSH_KEY_TO_VM",
+      "action": "Add SSH key to VM",
+      "description": "Instance",
+      "id": 6,
+      "isActive": true
+    },
+    {
+      "action_key": "RESIZE",
+      "action": "Resize",
+      "description": "Instance",
+      "id": 7,
+      "isActive": true
+    },
+    {
+      "action_key": "REBOOT_VM",
+      "action": "Reboot VM",
+      "description": "Instance",
+      "id": 8,
+      "isActive": true
+    },
+    {
+      "action_key": "CHANGE_PRIVATE_IP",
+      "action": "Change Private IP",
+      "description": "Instance",
+      "id": 9,
+      "isActive": true
+    },
+    {
+      "action_key": "ENABLE_BILLING_AND_SUPPORT",
+      "action": "Enable billing and support",
+      "description": "Company",
+      "id": 10,
+      "isActive": true
+    },
+    {
+      "action_key": "MULTI_ZONE",
+      "action": "Multi Zone",
+      "description": "User",
+      "id": 11,
+      "isActive": true
+    },
+    {
+      "action_key": "CHANGE_VM_DISPLAY_NAME",
+      "action": "Change VM Display Name",
+      "description": "Instance",
+      "id": 12,
+      "isActive": true
+    },
+    {
+      "action_key": "DEPARTMENT_RESOURCE_QUOTA_MODIFICATION",
+      "action": "Department Resource Quota Modification",
+      "description": "Department",
+      "id": 13,
+      "isActive": true
+    },
+    {
+      "action_key": "CREATE_PROJECT",
+      "action": "Create Project",
+      "description": "Projects",
+      "id": 14,
+      "isActive": true
+    },
+    {
+      "action_key": "ACQUIRE_IP_ADDRESS",
+      "action": "Acquire IP Address",
+      "description": "Network",
+      "id": 15,
+      "isActive": true
+    },
+    {
+      "action_key": "ADD_PORT_FORWARDING",
+      "action": "Add Port Forwarding",
+      "description": "Network",
+      "id": 16,
+      "isActive": true
+    },
+    {
+      "action_key": "EDIT_APPLICATION_TYPE",
+      "action": "Edit Application Type",
+      "description": "Application",
+      "id": 17,
+      "isActive": true
+    },
+    {
+      "action_key": "STOP_VM",
+      "action": "Stop VM",
+      "description": "Instance",
+      "id": 18,
+      "isActive": true
+    },
+    {
+      "action_key": "EDIT_TEMPLATE",
+      "action": "Edit Template",
+      "description": "Templates",
+      "id": 19,
+      "isActive": true
+    },
+    {
+      "action_key": "EDIT_DEPARTMENT",
+      "action": "Edit Department",
+      "description": "Department",
+      "id": 20,
+      "isActive": true
+    },
+    {
+      "action_key": "ATTACH_DISK",
+      "action": "Attach Disk",
+      "description": "Storage",
+      "id": 21,
+      "isActive": true
+    },
+    {
+      "action_key": "HOST_INFORMATION",
+      "action": "Host Information",
+      "description": "Instance",
+      "id": 22,
+      "isActive": true
+    },
+    {
+      "action_key": "DELETE_VM_SNAPSHOT",
+      "action": "Delete VM Snapshot",
+      "description": "Instance",
+      "id": 23,
+      "isActive": true
+    },
+    {
+      "action_key": "DELETE_VPC",
+      "action": "Delete VPC",
+      "description": "VPC",
+      "id": 24,
+      "isActive": true
+    },
+    {
+      "action_key": "REPLACE_ACL_LIST",
+      "action": "Replace ACL List",
+      "description": "VPC",
+      "id": 25,
+      "isActive": true
+    },
+    {
+      "action_key": "INVOICE",
+      "action": "Invoice",
+      "description": "Billing",
+      "id": 26,
+      "isActive": true
+    },
+    {
+      "action_key": "DELETE_FIREWALL_RULE",
+      "action": "Delete Firewall Rule",
+      "description": "Network",
+      "id": 27,
+      "isActive": true
+    },
+    {
+      "action_key": "RELEASE_ADDITIONAL_SERVICES",
+      "action": "Release additional services",
+      "description": "Additional Services",
+      "id": 28,
+      "isActive": true
+    },
+    {
+      "action_key": "CHANGE_SSH_KEY",
+      "action": "Change SSH Key",
+      "description": "Instance",
+      "id": 29,
+      "isActive": true
+    },
+    {
+      "action_key": "EDIT_PROJECT",
+      "action": "Edit Project",
+      "description": "Projects",
+      "id": 30,
+      "isActive": true
+    },
+    {
+      "action_key": "UPDATE_NETWORK_TO_VM",
+      "action": "Update Network To VM",
+      "description": "Instance",
+      "id": 31,
+      "isActive": true
+    },
+    {
+      "action_key": "ENABLE_ROLE",
+      "action": "Enable Role",
+      "description": "Roles",
+      "id": 32,
+      "isActive": true
+    },
+    {
+      "action_key": "LAUNCH_VM_FROM_TEMPLATE",
+      "action": "Launch VM from Template",
+      "description": "Instance",
+      "id": 33,
+      "isActive": true
+    },
+    {
+      "action_key": "RECURRING_SNAPSHOT",
+      "action": "Recurring Snapshot",
+      "description": "Storage",
+      "id": 34,
+      "isActive": true
+    },
+    {
+      "action_key": "DETACH_ISO",
+      "action": "Detach ISO",
+      "description": "Instance",
+      "id": 35,
+      "isActive": true
+    },
+    {
+      "action_key": "EDIT_ROLE",
+      "action": "Edit Role",
+      "description": "Roles",
+      "id": 36,
+      "isActive": true
+    },
+    {
+      "action_key": "DELETE_PORT_FORWARDING",
+      "action": "Delete Port Forwarding",
+      "description": "Network",
+      "id": 37,
+      "isActive": true
+    },
+    {
+      "action_key": "DEPARTMENT_QUOTA_EDIT",
+      "action": "Department Quota Edit",
+      "description": "Quota Limit",
+      "id": 38,
+      "isActive": true
+    },
+    {
+      "action_key": "DELETE_AFFINITY",
+      "action": "Delete Affinity",
+      "description": "Instance",
+      "id": 39,
+      "isActive": true
+    },
+    {
+      "action_key": "DISABLE_ROLE",
+      "action": "Disable Role",
+      "description": "Roles",
+      "id": 40,
+      "isActive": true
+    },
+    {
+      "action_key": "EDIT_USER",
+      "action": "Edit User",
+      "description": "User",
+      "id": 41,
+      "isActive": true
+    },
+    {
+      "action_key": "SUSPEND_COMPANY",
+      "action": "Suspend Company",
+      "description": "Company",
+      "id": 42,
+      "isActive": true
+    },
+    {
+      "action_key": "DOMAIN_QUOTA",
+      "action": "Domain Quota",
+      "description": "Quota Limit",
+      "id": 43,
+      "isActive": true
+    },
+    {
+      "action_key": "ENABLE_VPN",
+      "action": "Enable VPN",
+      "description": "Network",
+      "id": 44,
+      "isActive": true
+    },
+    {
+      "action_key": "REGISTER_TEMPLATE",
+      "action": "Register Template",
+      "description": "Templates",
+      "id": 45,
+      "isActive": true
+    },
+    {
+      "action_key": "CREATE_VPC",
+      "action": "Create VPC",
+      "description": "VPC",
+      "id": 46,
+      "isActive": true
+    },
+    {
+      "action_key": "ENABLE_USER",
+      "action": "Enable User",
+      "description": "User",
+      "id": 47,
+      "isActive": true
+    },
+    {
+      "action_key": "DELETE_ROLE",
+      "action": "Delete Role",
+      "description": "Roles",
+      "id": 48,
+      "isActive": true
+    },
+    {
+      "action_key": "RECOVER_VM",
+      "action": "Recover VM",
+      "description": "Instance",
+      "id": 49,
+      "isActive": true
+    },
+    {
+      "action_key": "ASSIGN_ROLE",
+      "action": "Assign Role",
+      "description": "Roles",
+      "id": 50,
+      "isActive": true
+    },
+    {
+      "action_key": "PROJECT_QUOTA_EDIT",
+      "action": "Project Quota Edit",
+      "description": "Quota Limit",
+      "id": 51,
+      "isActive": true
+    },
+    {
+      "action_key": "EDIT_COMPANY",
+      "action": "Edit Company",
+      "description": "Company",
+      "id": 52,
+      "isActive": true
+    },
+    {
+      "action_key": "EDIT_COMPANY_QUOTA",
+      "action": "Edit Company Quota",
+      "description": "Company",
+      "id": 53,
+      "isActive": true
+    },
+    {
+      "action_key": "CANCEL_MAINTENANCE_MODE",
+      "action": "Cancel Maintenance Mode",
+      "description": "Host",
+      "id": 54,
+      "isActive": true
+    },
+    {
+      "action_key": "RESET_PASSWORD",
+      "action": "Reset Password",
+      "description": "Instance",
+      "id": 55,
+      "isActive": true
+    },
+    {
+      "action_key": "SET_MAINTENANCE_MODE",
+      "action": "Set Maintenance Mode",
+      "description": "Host",
+      "id": 56,
+      "isActive": true
+    },
+    {
+      "action_key": "OWNERSHIP_MIGRATION",
+      "action": "Ownership Migration",
+      "description": "Instance",
+      "id": 57,
+      "isActive": true
+    },
+    {
+      "action_key": "DETACH_SERVICE",
+      "action": "Detach Service",
+      "description": "Instance",
+      "id": 58,
+      "isActive": true
+    },
+    {
+      "action_key": "CONFIGURE_VM_RETIREMENT",
+      "action": "Configure VM Retirement",
+      "description": "Instance",
+      "id": 59,
+      "isActive": true
+    },
+    {
+      "action_key": "DELETE_NETWORK_TO_VM",
+      "action": "Delete Network To VM",
+      "description": "Instance",
+      "id": 60,
+      "isActive": true
+    },
+    {
+      "action_key": "PURCHASE_ADDITIONAL_SERVICES",
+      "action": "Purchase additional services",
+      "description": "Additional Services",
+      "id": 61,
+      "isActive": true
+    },
+    {
+      "action_key": "ASSIGN_USERS_TO_PROJECTS",
+      "action": "Assign Users to Projects",
+      "description": "Projects",
+      "id": 62,
+      "isActive": true
+    },
+    {
+      "action_key": "EDIT_NETWORK",
+      "action": "Edit Network",
+      "description": "Network",
+      "id": 63,
+      "isActive": true
+    },
+    {
+      "action_key": "RESIZE_VOLUME",
+      "action": "Resize Volume",
+      "description": "Storage",
+      "id": 64,
+      "isActive": true
+    },
+    {
+      "action_key": "CREATE_COMPANY",
+      "action": "Create Company",
+      "description": "Company",
+      "id": 65,
+      "isActive": true
+    },
+    {
+      "action_key": "RESTART_VPC",
+      "action": "Restart VPC",
+      "description": "VPC",
+      "id": 66,
+      "isActive": true
+    },
+    {
+      "action_key": "DELETE_USER",
+      "action": "Delete User",
+      "description": "User",
+      "id": 67,
+      "isActive": true
+    },
+    {
+      "action_key": "SET_DEDICATED_TO",
+      "action": "Set Dedicated to",
+      "description": "Host",
+      "id": 68,
+      "isActive": true
+    },
+    {
+      "action_key": "CREATE_ROLE",
+      "action": "Create Role",
+      "description": "Roles",
+      "id": 69,
+      "isActive": true
+    },
+    {
+      "action_key": "LAUNCH_FROM_SNAPSHOT",
+      "action": "Launch from Snapshot",
+      "description": "Templates",
+      "id": 70,
+      "isActive": true
+    },
+    {
+      "action_key": "ADD_DEPARTMENT",
+      "action": "Add Department",
+      "description": "Department",
+      "id": 71,
+      "isActive": true
+    },
+    {
+      "action_key": "CREATE_TEMPLATE",
+      "action": "Create Template",
+      "description": "Instance",
+      "id": 72,
+      "isActive": true
+    },
+    {
+      "action_key": "DESTROY_VM",
+      "action": "Destroy VM",
+      "description": "Instance",
+      "id": 73,
+      "isActive": true
+    },
+    {
+      "action_key": "DELETE_COMPANY",
+      "action": "Delete Company",
+      "description": "Company",
+      "id": 74,
+      "isActive": true
+    },
+    {
+      "action_key": "DISABLE_STATIC_NAT",
+      "action": "Disable Static NAT",
+      "description": "Network",
+      "id": 75,
+      "isActive": true
+    },
+    {
+      "action_key": "ENABLE_COMPANY",
+      "action": "Enable Company",
+      "description": "Company",
+      "id": 76,
+      "isActive": true
+    },
+    {
+      "action_key": "ADD_VOLUME",
+      "action": "Add Volume",
+      "description": "Storage",
+      "id": 77,
+      "isActive": true
+    },
+    {
+      "action_key": "RESET_USER_PASSWORD",
+      "action": "Reset User Password",
+      "description": "User",
+      "id": 78,
+      "isActive": true
+    },
+    {
+      "action_key": "CREATE_SSH_KEY",
+      "action": "Create SSH Key",
+      "description": "SSH Keys",
+      "id": 79,
+      "isActive": true
+    },
+    {
+      "action_key": "ENABLE_HOST",
+      "action": "Enable Host",
+      "description": "Host",
+      "id": 80,
+      "isActive": true
+    },
+    {
+      "action_key": "UPLOAD_VOLUME",
+      "action": "Upload Volume",
+      "description": "Storage",
+      "id": 81,
+      "isActive": true
+    },
+    {
+      "action_key": "EDIT_LOAD_BALANCING",
+      "action": "Edit Load Balancing",
+      "description": "Network",
+      "id": 82,
+      "isActive": true
+    },
+    {
+      "action_key": "ACQUIRE_SECONDARY_IP_ADDRESS",
+      "action": "Acquire Secondary IP Address",
+      "description": "Instance",
+      "id": 83,
+      "isActive": true
+    },
+    {
+      "action_key": "RELEASE_IP",
+      "action": "Release IP",
+      "description": "Network",
+      "id": 84,
+      "isActive": true
+    },
+    {
+      "action_key": "DELETE_SSH_KEY",
+      "action": "Delete SSH Key",
+      "description": "SSH Keys",
+      "id": 85,
+      "isActive": true
+    },
+    {
+      "action_key": "REINSTALL_VM",
+      "action": "Reinstall VM",
+      "description": "Instance",
+      "id": 86,
+      "isActive": true
+    },
+    {
+      "action_key": "ADD_NETWORK_TO_VM",
+      "action": "Add Network To VM",
+      "description": "Instance",
+      "id": 87,
+      "isActive": true
+    },
+    {
+      "action_key": "CREATE_APPLICATION_TYPE",
+      "action": "Create Application Type",
+      "description": "Application",
+      "id": 88,
+      "isActive": true
+    },
+    {
+      "action_key": "MIGRATE_HOST",
+      "action": "Migrate Host",
+      "description": "Instance",
+      "id": 89,
+      "isActive": true
+    },
+    {
+      "action_key": "DISABLE_HOST",
+      "action": "Disable Host",
+      "description": "Host",
+      "id": 90,
+      "isActive": true
+    },
+    {
+      "action_key": "CURRENT_USAGE",
+      "action": "Current Usage",
+      "description": "Billing",
+      "id": 91,
+      "isActive": true
+    },
+    {
+      "action_key": "CONFIGURE_LOAD_BALANCING",
+      "action": "Configure Load Balancing",
+      "description": "Network",
+      "id": 92,
+      "isActive": true
+    },
+    {
+      "action_key": "DELETE_NETWORK",
+      "action": "Delete Network",
+      "description": "Network",
+      "id": 93,
+      "isActive": true
+    },
+    {
+      "action_key": "DETACH_DISK",
+      "action": "Detach Disk",
+      "description": "Storage",
+      "id": 94,
+      "isActive": true
+    },
+    {
+      "action_key": "RELEASE_DEDICATED",
+      "action": "Release Dedicated",
+      "description": "Host",
+      "id": 95,
+      "isActive": true
+    },
+    {
+      "action_key": "CHANGE_AFFINITY",
+      "action": "Change Affinity",
+      "description": "Instance",
+      "id": 96,
+      "isActive": true
+    },
+    {
+      "action_key": "TAKE_VM_SNAPSHOT",
+      "action": "Take VM Snapshot",
+      "description": "Instance",
+      "id": 97,
+      "isActive": true
+    },
+    {
+      "action_key": "RESTART_NETWORK",
+      "action": "Restart Network",
+      "description": "Network",
+      "id": 98,
+      "isActive": true
+    },
+    {
+      "action_key": "DELETE_APPLICATION_TYPE",
+      "action": "Delete Application Type",
+      "description": "Application",
+      "id": 99,
+      "isActive": true
+    },
+    {
+      "action_key": "DELETE_DEPARTMENT",
+      "action": "Delete Department",
+      "description": "Department",
+      "id": 100,
+      "isActive": true
+    },
+    {
+      "action_key": "ADD_ISOLATED_NETWORK",
+      "action": "Add Isolated Network",
+      "description": "Network",
+      "id": 101,
+      "isActive": true
+    },
+    {
+      "action_key": "LIST_OF_REPORTS_AUTHORISED_TO_VIEW",
+      "action": "List of reports authorised to view",
+      "description": "Reports",
+      "id": 102,
+      "isActive": true
+    },
+    {
+      "action_key": "DISABLE_USER",
+      "action": "Disable User",
+      "description": "User",
+      "id": 103,
+      "isActive": true
+    },
+    {
+      "action_key": "RELEASE_USERS_TO_PROJECTS",
+      "action": "Release Users to Projects",
+      "description": "Projects",
+      "id": 104,
+      "isActive": true
+    },
+    {
+      "action_key": "REVERT_DISK_SNAPSHOT",
+      "action": "Revert Disk Snapshot",
+      "description": "Storage",
+      "id": 105,
+      "isActive": true
+    },
+    {
+      "action_key": "RECONNECT",
+      "action": "Reconnect",
+      "description": "Host",
+      "id": 106,
+      "isActive": true
+    },
+    {
+      "action_key": "ADD_AFFINITY",
+      "action": "Add Affinity",
+      "description": "Instance",
+      "id": 107,
+      "isActive": true
+    },
+    {
+      "action_key": "ENABLE_STATIC_NAT",
+      "action": "Enable Static NAT",
+      "description": "Network",
+      "id": 108,
+      "isActive": true
+    },
+    {
+      "action_key": "CONFIGURE_VPC",
+      "action": "Configure VPC",
+      "description": "VPC",
+      "id": 109,
+      "isActive": true
+    },
+    {
+      "action_key": "CREATE_VM",
+      "action": "Create VM",
+      "description": "Instance",
+      "id": 110,
+      "isActive": true
+    },
+    {
+      "action_key": "DELETE_EGRESS_RULE",
+      "action": "Delete Egress Rule",
+      "description": "Network",
+      "id": 111,
+      "isActive": true
+    },
+    {
+      "action_key": "ADD_ACL_LIST",
+      "action": "Add ACL List",
+      "description": "VPC",
+      "id": 112,
+      "isActive": true
+    },
+    {
+      "action_key": "ADD_EGRESS_RULE",
+      "action": "Add Egress Rule",
+      "description": "Network",
+      "id": 113,
+      "isActive": true
+    },
+    {
+      "action_key": "ADD_LOAD_BALANCING_TO_VM",
+      "action": "Add Load Balancing to VM",
+      "description": "Network",
+      "id": 114,
+      "isActive": true
+    },
+    {
+      "action_key": "START_VM",
+      "action": "Start VM",
+      "description": "Instance",
+      "id": 115,
+      "isActive": true
+    },
+    {
+      "action_key": "MONITOR_VM_PERFORMANCE",
+      "action": "Monitor VM Performance",
+      "description": "Instance",
+      "id": 116,
+      "isActive": true
+    },
+    {
+      "action_key": "DELETE_MY_TEMPLATE",
+      "action": "Delete My Template",
+      "description": "Templates",
+      "id": 117,
+      "isActive": true
+    },
+    {
+      "action_key": "VIEW_COMPANY_DASHBOARD",
+      "action": "View Company Dashboard",
+      "description": "Company",
+      "id": 118,
+      "isActive": true
+    },
+    {
+      "action_key": "DELETE_PROJECT",
+      "action": "Delete Project",
+      "description": "Projects",
+      "id": 119,
+      "isActive": true
+    },
+    {
+      "action_key": "PAYMENTS",
+      "action": "Payments",
+      "description": "Billing",
+      "id": 121,
+      "isActive": true
+    },
+    {
+      "action_key": "ADD_APPLICATION_TO_VM",
+      "action": "Add Application To VM",
+      "description": "Instance",
+      "id": 122,
+      "isActive": true
+    },
+    {
+      "action_key": "USAGE_STATISTICS",
+      "action": "Usage Statistics",
+      "description": "Billing",
+      "id": 123,
+      "isActive": true
+    },
+    {
+      "action_key": "ATTACH_ISO",
+      "action": "Attach ISO",
+      "description": "Instance",
+      "id": 124,
+      "isActive": true
+    },
+    {
+      "action_key": "REMOVE_LOAD_BALANCING_FROM_VM",
+      "action": "Remove Load Balancing from VM",
+      "description": "Network",
+      "id": 125,
+      "isActive": true
+    },
+    {
+      "action_key": "EDIT_VPC",
+      "action": "Edit VPC",
+      "description": "VPC",
+      "id": 126,
+      "isActive": true
+    },
+    {
+      "action_key": "CREATE_USER",
+      "action": "Create User",
+      "description": "User",
+      "id": 127,
+      "isActive": true
+    },
+    {
+      "action_key": "DISK_SNAPSHOT",
+      "action": "Disk Snapshot",
+      "description": "Storage",
+      "id": 128,
+      "isActive": true
+    },
+    {
+      "action_key": "DELETE_VOLUME",
+      "action": "Delete Volume",
+      "description": "Storage",
+      "id": 129,
+      "isActive": true
+    },
+    {
+      "action_key": "RESTORE_VM_SNAPSHOT",
+      "action": "Restore VM Snapshot",
+      "description": "Instance",
+      "id": 130,
+      "isActive": true
+    },
+    {
+      "action_key": "UPLOAD_FROM_LOCAL",
+      "action": "Upload From Local",
+      "description": "Storage",
+      "id": 131,
+      "isActive": true
+    },
+    {
+      "action_key": "DELETE_DISK_SNAPSHOT",
+      "action": "Delete Disk Snapshot",
+      "description": "Storage",
+      "id": 132,
+      "isActive": true
+    },
+    {
+      "action_key": "EDIT_VPN_CUSTOMER_GATEWAY",
+      "action": "Edit Vpn Customer Gateway",
+      "description": "VPN",
+      "id": 134,
+      "isActive": true
+    },
+    {
+      "action_key": "CREATE_VPN_CUSTOMER_GATEWAY",
+      "action": "Create Vpn Customer Gateway",
+      "description": "VPN",
+      "id": 135,
+      "isActive": true
+    },
+    {
+      "action_key": "DELETE_VPN_CUSTOMER_GATEWAY",
+      "action": "Delete Vpn Customer Gateway",
+      "description": "VPN",
+      "id": 136,
+      "isActive": true
+    },
+    {
+      "action_key": "EDIT_APPLICATION_ROLE",
+      "action": "Edit Application Role",
+      "description": "Application Role",
+      "id": 137,
+      "isActive": true
+    },
+    {
+      "action_key": "CREATE_APPLICATION_ROLE",
+      "action": "Create Application Role",
+      "description": "Application Role",
+      "id": 138,
+      "isActive": true
+    },
+    {
+      "action_key": "DELETE_APPLICATION_ROLE",
+      "action": "Delete Application Role",
+      "description": "Application Role",
+      "id": 139,
+      "isActive": true
+    }
+  ],
+  "type": "ROOT_ADMIN",
+  "zabbixAutoScriptEnabled": true,
+  "departmentUuid": "d6089c7c-e184-11e8-9d95-4ab2a88c1305",
+  "buildNumber": "(build 2430)",
+  "zabbixEncryptedAdminName": "P812+BmGkf5JCNZYnZTwmw==",
+  "superDeptAdmin": false,
+  "password": "fcQz/e9xjwM7TyVtocgYDg==",
+  "loginTime": 1608716511,
+  "zabbixVersion": "4",
+  "zabbixPluginStatus": true,
+  "zoneId": 1,
+  "userEmail": "sherry@rynnova.com",
+  "id": 758,
+  "encryptedUserName": "AAob3UoTupB6IWdzj80z9m7iQ6Huo2ZeRZaXj56rOWc=",
+  "kongStatus": "true",
+  "domainAbbreviationName": "ROOT",
+  "ldapUserId": 581,
+  "departmentName": "admin",
+  "cloudSyncStatus": true,
+  "roleId": 1,
+  "pandaToken": "MVG/Zoav6r6FcuvCttEnnE+EDv+/qojzQTN57XUY2fzmoyuabrOvkbimOzlc6QMVfmfk6zFDsC6vIJ/YLuVBAzuZAwlLReMgFpPCJWqlHD0ncTrUHmzuaErHUOdTF4GuE9bYKOFqtosLXAOHHIhvQJwa/f8I/S2ZtzChkq2/NgHDTYuShuJFYvF8Cn4rVbqaO9po2EW8VSdc+2kG3av7cxPx6i9pp+VEhsrqwMNl/MTdqPgxZsYprjsmvdCyZTNiCOeFZFAYiKTp2pm6Hv1N0sh32Xdz6o3dUkGLnzRJjbD70tJQ0sIJtc1OyrO9L460UQQH9nbVkZz0Kdz/KZF6NfWFSURYDC/2xKvUjOwr0jHKoVsRiDEeDOb1kDNYfLhAHtoWUvfuygB/CTjkTN6K2vvnjYer6D8YzH0xKP/IQ6WXnlBgxsmXlAQqz/gSPJGL",
+  "userFullName": "sherry@rynnova.com, sherry@rynnova.com",
+  "loginToken": "44725c23-899b-4d1c-9dd6-266744d9d5ca",
+  "departmentUserType": "DEPARTMENT_USER",
+  "timeZone": "Asia/Shanghai",
+  "userName": "sherry@rynnova.com",
+  "userId": "b2944448-6507-427b-b964-833cf045bde1",
+  "domainId": 1,
+  "token": "ab4DIZFkXWy5SKJTsFkR6l2+rpn4KbYeJwbakQCgPqdbMgXSQDKMcnI/kvdCUMWgW+wGzratDGfkPHtcHO7qwpKMSl143jpK0OzQtTYe7P7+hKXj7+LHIg8Il6IowD4ggtqVuSTEzNUKcVxYWgfOztM4U/YURzcrdVlyP75n5xo=",
+  "adUserCreation": false,
+  "licenseStatus": 200,
+  "domainName": "ROOT",
+  "zabbixSysmapId": "2",
+  "roleName": "FULL_PERMISSION",
+  "paginationLimit": 10,
+  "zabbixEncryptedAdminPassword": "qOR0Vq04HZ/RzdIIh+p3Kg==",
+  "rememberMe": "false"
+}
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.2' class='hiddenRow'>
+    <td colspan='2' class='none'><div class='testcase'>test_3_apikey_00001_apikey: test_3_apikey_00001_apikey</div></td>
+    <td colspan='7' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.2')" >
+        pass</a>
+
+    <div id='div_pt1.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.2: ——————————测试获取APIKEY——————————
+sherry@rynnova.com
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.3' class='hiddenRow'>
+    <td colspan='2' class='none'><div class='testcase'>test_create_volume_00001_volume1: test_create_volume_00001_volume1</div></td>
+    <td colspan='7' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.3')" >
+        pass</a>
+
+    <div id='div_pt1.3' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.3').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.3: {'departmentId': 1, 'domain': {'companyNameAbbreviation': 'ROOT', 'defaultZone': 1, 'domainName': 'ROOT', 'domainNameType': 'R', 'dynamicFields': [], 'email': '12423@qq.com', 'id': 1, 'lastName': '111', 'name': 'ROOT', 'phone': '9788554511', 'portalUserName': '111', 'primaryFirstName': 'bluetek', 'status': 'ACTIVE', 'uuid': '602d9221-e184-11e8-9d95-4ab2a88c1305', 'version': 1027}, 'name': 'test-liuxr-007', 'storageOfferingId': 6, 'storageTags': None, 'zoneId': 1}
+{'x-auth-login-token': '44725c23-899b-4d1c-9dd6-266744d9d5ca', 'x-auth-ldap-user-id': '581', 'x-auth-token': 'ab4DIZFkXWy5SKJTsFkR6l2+rpn4KbYeJwbakQCgPqdbMgXSQDKMcnI/kvdCUMWgW+wGzratDGfkPHtcHO7qwpKMSl143jpK0OzQtTYe7P7+hKXj7+LHIg8Il6IowD4ggtqVuSTEzNUKcVxYWgfOztM4U/YURzcrdVlyP75n5xo=', 'x-auth-user-id': '581', 'apikey': 'ASkNbddmq0l3TubWsdAYUqcpPUTqdE5t9YiyoaxSqSLFyd9LWmxFuhLI5r5m', 'secretkey': 'fd1_HocgyRfdWwApW_kwwFLoSIrKMAdEDfiUMLOVDi9wyIPpY89U3S-9lKGw', 'Content-Type': 'application/json'}
+创建磁盘的状态码结果是： 201
+创建虚拟磁盘成功返回数据： {
+  "id": 3825,
+  "uuid": "844bed2d-ee89-4bc2-8b9a-0b74d44fc550",
+  "name": "test-liuxr-007",
+  "volumeType": "DATADISK",
+  "domain": {
+    "id": 1,
+    "uuid": "602d9221-e184-11e8-9d95-4ab2a88c1305",
+    "name": "ROOT",
+    "description": null,
+    "companyNameAbbreviation": "ROOT",
+    "portalUserName": "111",
+    "password": null,
+    "cityHeadquarter": null,
+    "companyAddress": null,
+    "departmentName": null,
+    "departmentNameChinese": null,
+    "primaryFirstName": "bluetek",
+    "lastName": "111",
+    "email": "12423@qq.com",
+    "phone": "9788554511",
+    "secondaryContactName": null,
+    "secondaryContactLastName": null,
+    "secondaryContactEmail": null,
+    "secondaryContactPhone": null,
+    "isActive": null,
+    "billing": null,
+    "support": null,
+    "zoneList": null,
+    "defaultZone": 1,
+    "status": "ACTIVE",
+    "filePath": null,
+    "fileName": null,
+    "logoImgPath": null,
+    "logoImgFile": null,
+    "companyWebsite": null,
+    "industry": null,
+    "primaryJobTitle": null,
+    "secondaryJobTitle": null,
+    "version": 1027,
+    "createdBy": null,
+    "updatedBy": null,
+    "createdDateTime": null,
+    "updatedDateTime": null,
+    "syncFlag": null,
+    "domainName": "ROOT",
+    "domainNameType": "R",
+    "file": null,
+    "dynamicFields": []
+  },
+  "domainId": 1,
+  "department": null,
+  "departmentId": 1,
+  "project": null,
+  "projectId": null,
+  "zone": null,
+  "zoneId": 1,
+  "storageOffering": null,
+  "storageOfferingId": 6,
+  "diskSize": 214748364800,
+  "diskSizeFlag": true,
+  "diskMaxIops": null,
+  "diskMinIops": null,
+  "status": "ALLOCATED",
+  "format": null,
+  "url": null,
+  "checksum": null,
+  "eventMessage": null,
+  "version": 0,
+  "vmInstance": null,
+  "vmInstanceId": null,
+  "isRemoved": null,
+  "isShrink": null,
+  "storageName": null,
+  "storageId": null,
+  "storagePath": null,
+  "path": null,
+  "clusterId": null,
+  "createdBy": 0,
+  "updatedBy": 0,
+  "createdDateTime": 1608716512.369,
+  "updatedDateTime": 1608716512.369,
+  "isActive": true,
+  "volumeOwner": 758,
+  "transvmInstanceId": null,
+  "transZoneId": null,
+  "transStorageOfferingId": null,
+  "transDomainId": null,
+  "transDepartmentId": null,
+  "transProjectId": null,
+  "transJobId": null,
+  "transClusterId": null,
+  "isSyncFlag": true,
+  "detachedDateTime": 1608716512.368,
+  "attachedDateTime": null
+}
+查询磁盘的状态码结果是： 200
+{'x-auth-login-token': '44725c23-899b-4d1c-9dd6-266744d9d5ca', 'x-auth-ldap-user-id': '581', 'x-auth-token': 'ab4DIZFkXWy5SKJTsFkR6l2+rpn4KbYeJwbakQCgPqdbMgXSQDKMcnI/kvdCUMWgW+wGzratDGfkPHtcHO7qwpKMSl143jpK0OzQtTYe7P7+hKXj7+LHIg8Il6IowD4ggtqVuSTEzNUKcVxYWgfOztM4U/YURzcrdVlyP75n5xo=', 'x-auth-user-id': '581', 'apikey': 'ASkNbddmq0l3TubWsdAYUqcpPUTqdE5t9YiyoaxSqSLFyd9LWmxFuhLI5r5m', 'secretkey': 'fd1_HocgyRfdWwApW_kwwFLoSIrKMAdEDfiUMLOVDi9wyIPpY89U3S-9lKGw', 'Content-Type': 'application/json', 'uuid': '844bed2d-ee89-4bc2-8b9a-0b74d44fc550', 'zoneId': '1', 'domainId': '1', 'departmentId': '1'}
+删除虚拟磁盘状态码结果： 500
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.4' class='hiddenRow'>
+    <td colspan='2' class='none'><div class='testcase'>test_get_token</div></td>
+    <td colspan='7' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.4')" >
+        pass</a>
+
+    <div id='div_pt1.4' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.4').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.4: ——————————测试中间值参数获取——————————
+ldapuserid: 581
+token: ab4DIZFkXWy5SKJTsFkR6l2+rpn4KbYeJwbakQCgPqdbMgXSQDKMcnI/kvdCUMWgW+wGzratDGfkPHtcHO7qwpKMSl143jpK0OzQtTYe7P7+hKXj7+LHIg8Il6IowD4ggtqVuSTEzNUKcVxYWgfOztM4U/YURzcrdVlyP75n5xo=
+loginToken: 44725c23-899b-4d1c-9dd6-266744d9d5ca
+kongApiKey: ASkNbddmq0l3TubWsdAYUqcpPUTqdE5t9YiyoaxSqSLFyd9LWmxFuhLI5r5m
+kongSecretKey: fd1_HocgyRfdWwApW_kwwFLoSIrKMAdEDfiUMLOVDi9wyIPpY89U3S-9lKGw
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.5' class='hiddenRow'>
+    <td colspan='2' class='none'><div class='testcase'>test_logout_00001_logout: test_logout_00001_logout</div></td>
+    <td colspan='7' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.5')" >
+        pass</a>
+
+    <div id='div_pt1.5' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.5').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.5: ——————————登出云平台——————————
+{
+  "id": 5,
+  "userId": 581,
+  "isAlreadyLogin": false,
+  "sessionId": null,
+  "loginToken": "44725c23-899b-4d1c-9dd6-266744d9d5ca",
+  "rememberMe": "false",
+  "rememberMeExpireDate": 1611308511,
+  "sessionExpireTime": 1609580516,
+  "loginUserName": "sherry@rynnova.com",
+  "firstLoginTimeStamp": 1608185293,
+  "lastLoginTimeStamp": 1608716511,
+  "counts": 125,
+  "duration": 531218,
+  "createdDateTime": 1608185293.0,
+  "updatedDateTime": 1608716516.697,
+  "durationTime": null,
+  "sessionExpireStatus": null,
+  "sessionIdleTime": null
+}
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='total_row'>
+    <td colspan='2'>Total</td>
+    <td>5</td>
+    <td>5</td>
+    <td>0</td>
+    <td>0</td>
+    <td>&nbsp;</td>
+</tr>
+</table>
+
+<div id='ending'>&nbsp;</div>
+
+</body>
+</html>

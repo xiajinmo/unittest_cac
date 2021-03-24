@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="027ad74d-3ba5-4e25-9436-4304b4a1d49e" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="sherry" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1hqXtOa2d0e4ZMxiB27Q4NVTS42" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="DTD" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../omni" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings>
+        <option name="useSoftWraps" value="true" />
+      </console-settings>
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\sherry\data\login_out" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.runall">
+    <configuration name="baidu" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="sherry" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="D:\omni\sherry\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/baidu.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="readConfig" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="sherry" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/readConfig.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="runall" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="sherry" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/runall.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test1210" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="sherry" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="D:\sherry\sherry\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test1210.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_cases" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="sherry" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/cases" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cases/test_cases.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_network" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="sherry" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/cases" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cases/test_network.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for api_cases.ApiCase" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="sherry" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/cases" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;api_cases.ApiCase&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for api_cases.ApiCase.test_logout" type="tests" factoryName="Unittests" nameIsGenerated="true">
+      <module name="sherry" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/cases" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;api_cases.ApiCase.test_logout&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.baidu" />
+      <item itemvalue="Python.readConfig" />
+      <item itemvalue="Python.runall" />
+      <item itemvalue="Python.test1210" />
+      <item itemvalue="Python.test_cases" />
+      <item itemvalue="Python.test_network" />
+      <item itemvalue="Python tests.Unittests for api_cases.ApiCase" />
+      <item itemvalue="Python tests.Unittests for api_cases.ApiCase.test_logout" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.runall" />
+        <item itemvalue="Python.test_cases" />
+        <item itemvalue="Python.readConfig" />
+        <item itemvalue="Python.test_network" />
+        <item itemvalue="Python tests.Unittests for api_cases.ApiCase" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="027ad74d-3ba5-4e25-9436-4304b4a1d49e" name="Default Changelist" comment="" />
+      <created>1600739809710</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1600739809710</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="324" y="96" key="#Inspections" timestamp="1607787274397">
+      <screen x="0" y="0" width="1463" height="874" />
+    </state>
+    <state x="324" y="96" key="#Inspections/0.0.1463.874@0.0.1463.874" timestamp="1607787274397" />
+    <state x="667" y="174" key="#Unittests_for_api_cases.ApiCase" timestamp="1607932016698">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="440" y="84" key="#Unittests_for_api_cases.ApiCase.test_1_api_demo" timestamp="1607792089623">
+      <screen x="0" y="0" width="1463" height="874" />
+    </state>
+    <state x="440" y="84" key="#Unittests_for_api_cases.ApiCase.test_1_api_demo/0.0.1463.874@0.0.1463.874" timestamp="1607792089623" />
+    <state x="667" y="174" key="#Unittests_for_api_cases.ApiCase.test_3_apikey" timestamp="1607926966756">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="667" y="174" key="#Unittests_for_api_cases.ApiCase.test_3_apikey/0.0.1920.1040@0.0.1920.1040" timestamp="1607926966756" />
+    <state x="667" y="174" key="#Unittests_for_api_cases.ApiCase/0.0.1920.1040@0.0.1920.1040" timestamp="1607932016698" />
+    <state x="668" y="166" key="#Unittests_for_sherry996.PythonOrgSearch" timestamp="1607334026553">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="668" y="166" key="#Unittests_for_sherry996.PythonOrgSearch/0.0.1920.1040@0.0.1920.1040" timestamp="1607334026553" />
+    <state x="440" y="65" key="#Unittests_in_api_cases.py" timestamp="1607792162503">
+      <screen x="0" y="0" width="1463" height="874" />
+    </state>
+    <state x="440" y="65" key="#Unittests_in_api_cases.py/0.0.1463.874@0.0.1463.874" timestamp="1607792162503" />
+    <state x="245" y="109" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607572115635">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="245" y="109" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607572115635" />
+    <state x="100" y="108" width="1719" height="840" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1607930197757">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="100" y="108" width="1719" height="840" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607930197757" />
+    <state x="467" y="240" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1608456105719">
+      <screen x="0" y="0" width="1463" height="874" />
+    </state>
+    <state x="467" y="240" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1463.874@0.0.1463.874" timestamp="1608456105719" />
+    <state x="440" y="62" key="#demo" timestamp="1607787804957">
+      <screen x="0" y="0" width="1463" height="874" />
+    </state>
+    <state x="440" y="62" key="#demo/0.0.1463.874@0.0.1463.874" timestamp="1607787804957" />
+    <state x="440" y="62" key="#runall" timestamp="1608386079321">
+      <screen x="0" y="0" width="1463" height="874" />
+    </state>
+    <state x="440" y="62" key="#runall/0.0.1463.874@0.0.1463.874" timestamp="1608386079321" />
+    <state x="668" y="145" key="#test1210" timestamp="1607572022628">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="668" y="145" key="#test1210/0.0.1920.1040@0.0.1920.1040" timestamp="1607572022628" />
+    <state x="672" y="228" key="FileChooserDialogImpl" timestamp="1614825438442">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="512" y="192" key="FileChooserDialogImpl/0.0.1463.874@0.0.1463.874" timestamp="1613618246447" />
+    <state x="672" y="228" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1614825438442" />
+    <state width="1899" height="254" key="GridCell.Tab.0.bottom" timestamp="1610451702956">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1442" height="262" key="GridCell.Tab.0.bottom/0.0.1463.874@0.0.1463.874" timestamp="1609340191900" />
+    <state width="1899" height="254" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1610451702956" />
+    <state width="1899" height="254" key="GridCell.Tab.0.center" timestamp="1610451702956">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1442" height="262" key="GridCell.Tab.0.center/0.0.1463.874@0.0.1463.874" timestamp="1609340191900" />
+    <state width="1899" height="254" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1610451702956" />
+    <state width="1899" height="254" key="GridCell.Tab.0.left" timestamp="1610451702956">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1442" height="262" key="GridCell.Tab.0.left/0.0.1463.874@0.0.1463.874" timestamp="1609340191899" />
+    <state width="1899" height="254" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1610451702956" />
+    <state width="1899" height="254" key="GridCell.Tab.0.right" timestamp="1610451702956">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1442" height="262" key="GridCell.Tab.0.right/0.0.1463.874@0.0.1463.874" timestamp="1609340191900" />
+    <state width="1899" height="254" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1610451702956" />
+    <state width="1442" height="362" key="GridCell.Tab.1.bottom" timestamp="1608720069310">
+      <screen x="0" y="0" width="1463" height="874" />
+    </state>
+    <state width="1442" height="362" key="GridCell.Tab.1.bottom/0.0.1463.874@0.0.1463.874" timestamp="1608720069310" />
+    <state width="1881" height="342" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607931998249" />
+    <state width="1442" height="362" key="GridCell.Tab.1.center" timestamp="1608720069310">
+      <screen x="0" y="0" width="1463" height="874" />
+    </state>
+    <state width="1442" height="362" key="GridCell.Tab.1.center/0.0.1463.874@0.0.1463.874" timestamp="1608720069310" />
+    <state width="1881" height="342" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607931998249" />
+    <state width="1442" height="362" key="GridCell.Tab.1.left" timestamp="1608720069310">
+      <screen x="0" y="0" width="1463" height="874" />
+    </state>
+    <state width="1442" height="362" key="GridCell.Tab.1.left/0.0.1463.874@0.0.1463.874" timestamp="1608720069310" />
+    <state width="1881" height="342" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607931998249" />
+    <state width="1442" height="362" key="GridCell.Tab.1.right" timestamp="1608720069310">
+      <screen x="0" y="0" width="1463" height="874" />
+    </state>
+    <state width="1442" height="362" key="GridCell.Tab.1.right/0.0.1463.874@0.0.1463.874" timestamp="1608720069310" />
+    <state width="1881" height="342" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607931998249" />
+    <state x="233" y="79" key="SettingsEditor" timestamp="1609135174027">
+      <screen x="0" y="0" width="1463" height="874" />
+    </state>
+    <state x="233" y="79" key="SettingsEditor/0.0.1463.874@0.0.1463.874" timestamp="1609135174027" />
+    <state x="306" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1607572040497" />
+    <state width="738" height="444" key="XDebugger.FullValuePopup" timestamp="1608553666797">
+      <screen x="0" y="0" width="1463" height="874" />
+    </state>
+    <state width="738" height="444" key="XDebugger.FullValuePopup/0.0.1463.874@0.0.1463.874" timestamp="1608553666797" />
+    <state x="70" y="77" width="1323" height="720" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1608000946492">
+      <screen x="0" y="0" width="1463" height="874" />
+    </state>
+    <state x="70" y="77" width="1323" height="720" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1463.874@0.0.1463.874" timestamp="1608000946492" />
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607936080204" />
+    <state x="543" y="311" key="com.intellij.ide.util.TipDialog" timestamp="1614825316130">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="261" key="com.intellij.ide.util.TipDialog/0.0.1463.874@0.0.1463.874" timestamp="1614069082823" />
+    <state x="543" y="311" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1614825316130" />
+    <state x="432" y="185" width="779" height="600" key="find.popup" timestamp="1608390932143">
+      <screen x="0" y="0" width="1463" height="874" />
+    </state>
+    <state x="432" y="185" width="779" height="600" key="find.popup/0.0.1463.874@0.0.1463.874" timestamp="1608390932143" />
+    <state x="567" y="220" width="786" height="600" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1607567216425" />
+    <state x="410" y="283" width="713" height="306" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1609135173244">
+      <screen x="0" y="0" width="1463" height="874" />
+    </state>
+    <state x="410" y="283" width="713" height="306" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.0.1463.874@0.0.1463.874" timestamp="1609135173244" />
+    <state x="474" y="199" width="672" height="570" key="search.everywhere.popup" timestamp="1608608576336">
+      <screen x="0" y="0" width="1463" height="874" />
+    </state>
+    <state x="474" y="199" width="672" height="570" key="search.everywhere.popup/0.0.1463.874@0.0.1463.874" timestamp="1608608576336" />
+    <state x="622" y="237" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1607930223983" />
+  </component>
+</project>

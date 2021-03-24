@@ -1,0 +1,49 @@
+# Zone : Rest API for zone operations
+listZoneStatisticalData:
+  name: listZoneStatisticalDetailedData
+  params:
+    zoneUuid: 2bc73a3d-4c92-49da-b323-1142a45dca8c
+  path: restapi/zone/listZoneStatisticalDetailedData
+# Volume : Rest API for volume operations
+listAllVolume:
+  name: listAllVolume
+  params:
+    zoneUuid: 2bc73a3d-4c92-49da-b323-1142a45dca8c
+  path: restapi/volume/listAllVolume
+# User : Rest API for user operations
+listAllUser:
+  name: listAllUser
+  path: restapi/user/listAllUser
+  params:
+    departmentId: 1
+    domainId: 1
+listAllUserExceptDisk:
+  name: listAllUserExceptDisk
+  path: restapi/user/listAllUserExceptDisk
+  params:
+    departmentId: 1
+    domainId: 1
+listAllUserExceptDiskBackup:
+  name: listAllUserExceptDiskBackup
+  path: restapi/user/listAllUserExceptDiskBackup
+  params:
+    departmentId: 1
+    domainId: 1
+listAllUserExceptVm:
+  name: listAllUserExceptVm
+  path: restapi/user/listAllUserExceptVm
+  params:
+    departmentId: 1
+    domainId: 1
+listAllUserExceptVmSnapshot:
+  name: listAllUserExceptVmSnapshot
+  path: restapi/user/listAllUserExceptVmSnapshot
+  params:
+    departmentId: 1
+    domainId: 1
+    zoneUuid: 2bc73a3d-4c92-49da-b323-1142a45dca8c
+#listUser:
+#  path: restapi/user/listUser
+#  name: listUser
+#  params:
+#    departmentUuid:

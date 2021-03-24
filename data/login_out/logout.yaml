@@ -1,0 +1,3 @@
+logout:
+  headers:
+    x-auth-login-token: '-1'

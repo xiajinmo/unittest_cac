@@ -1,0 +1,10 @@
+test:
+  path: restapi/zone/listComponent
+  headers:
+    Content-Type: application/json
+    x-auth-ldap-user-id: '758'
+    x-auth-login-token: 6e409007-1502-466f-8c0b-952f4996063f
+    x-auth-token: ab4DIZFkXWy5SKJTsFkR6l2+rpn4KbYeJwbakQCgPqdbMgXSQDKMcnI/kvdCUMWgW+wGzratDGfkPHtcHO7qwg75z8j6NYnRE8cvIpKIoLrCMrn4ruAdLEpkThA5G1EH0Kx7WCtN7IePxNV5oPIlj38QCJ+ZJSUYjsQbUIjgNjw=
+    x-auth-user-id: '758'
+    apikey: yLo1GS41Yp-9DLtyZNyU6u_Ydge3X6ne0j4T_xVVoTwlU1GtbujdyvTWx5a0
+    secretkey: L0oWbtOA8vrp6bxysFf89yjLA09aqHJOopw47AFcxXuTT1WQOfO6cu0DNVAy

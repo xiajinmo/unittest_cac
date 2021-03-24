@@ -1,0 +1,28 @@
+#login:
+#  path: https://dev2.rynnova.com/9093api/authenticate
+#  headers:
+#    x-auth-username: sherry@rynnova.com
+#    x-auth-remember: 'false'
+#    x-auth-password: Lemon19970207!
+#    x-force-login: 'false'
+#    x-requested-with: /
+#  data:
+#    password: "Lemon19970207!"
+#    rememberMe: false
+#    username: "sherry@rynnova.com"
+#  text:
+#    'admin'
+login:
+  path: https://uat.rynnova.com/9093api/authenticate
+  headers:
+    x-auth-username: sherry@rynnova.com
+    x-auth-remember: 'false'
+    x-auth-password: Lemon19970207!
+    x-force-login: 'false'
+    x-requested-with: /
+  data:
+    password: "Lemon19970207!"
+    rememberMe: false
+    username: "sherry@rynnova.com"
+  text:
+    'admin'

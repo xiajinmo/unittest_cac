@@ -1,0 +1,8 @@
+#test/test_swagger
+test/test_volume
+#test/test_resource_norm
+#test/test_network
+#instance/test02case
+#instance/test03case
+#instance/test04case
+#instance/test05case
